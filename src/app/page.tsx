@@ -10,7 +10,7 @@ import {
 export default function Home() {
   return (
     <div className="cinematic-composition">
-      <section className="container section-spacing hero-shell">
+      <section className="container hero-shell hero-fit-screen">
         <div className="hero-copy">
           <p className="eyebrow gilded-text">Tradition Meets Distinction</p>
           <h1 className="display-lg">Modern grooming with a gentleman&apos;s rhythm.</h1>

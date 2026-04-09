@@ -91,7 +91,7 @@ main {
 }
 
 .display-lg {
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.2rem, 4.8vw, 4.5rem);
   letter-spacing: -0.04em;
 }
 
@@ -162,22 +162,28 @@ main {
   grid-template-columns: 1.05fr 0.95fr;
   align-items: stretch;
   gap: 2rem;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
+}
+
+.hero-fit-screen {
+  min-height: calc(100svh - 84px);
+  padding-top: clamp(0.75rem, 2vh, 1.5rem);
+  padding-bottom: clamp(0.75rem, 2vh, 1.5rem);
 }
 
 .hero-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 3rem 0;
+  gap: 1rem;
+  padding: 1.25rem 0;
 }
 
 .hero-panel {
   position: relative;
   overflow: hidden;
   border-radius: 36px;
-  min-height: 560px;
+  min-height: clamp(300px, 60vh, 520px);
   border: 1px solid rgba(188, 157, 96, 0.18);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
@@ -464,6 +470,12 @@ main {
     min-height: 420px;
   }
 
+  .hero-fit-screen {
+    min-height: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
   .cta-banner {
     grid-template-columns: 1fr;
   }
@@ -479,11 +491,11 @@ main {
   }
 
   .hero-copy {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .hero-panel {
-    min-height: 360px;
+    min-height: 300px;
     border-radius: 26px;
   }
 
