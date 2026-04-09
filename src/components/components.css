@@ -1,0 +1,195 @@
+/* Header */
+.header-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  border-bottom: 1px solid rgba(188, 157, 96, 0.18);
+  background: rgba(15, 16, 18, 0.88);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  min-height: 84px;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.08em;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: var(--muted);
+  transition: color 150ms ease-out;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.book-btn {
+  padding: 0.8rem 1.15rem;
+  border: 1px solid rgba(188, 157, 96, 0.35);
+  color: var(--accent);
+}
+
+/* Button */
+.custom-button {
+  padding: 0.95rem 1.35rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 150ms ease-out, filter 150ms ease-out,
+    background 150ms ease-out;
+  border: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--ink);
+}
+
+.custom-button:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  color: var(--ink);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.06);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  background: rgba(188, 157, 96, 0.08);
+}
+
+/* HeritageDivider */
+.heritage-divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  opacity: 0.7;
+}
+
+.heritage-line {
+  height: 1px;
+  width: 72px;
+  background-color: rgba(188, 157, 96, 0.35);
+}
+
+.heritage-diamond {
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent);
+  transform: rotate(45deg);
+}
+
+/* Card */
+.heritage-card {
+  padding: 32px;
+  border-radius: 28px;
+  border: 1px solid rgba(188, 157, 96, 0.14);
+}
+
+.card-low {
+  background-color: var(--card);
+}
+
+.card-highest {
+  background-color: rgba(37, 38, 42, 0.95);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+/* InputField */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.input-label {
+  color: var(--muted);
+}
+
+.apothecary-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(188, 157, 96, 0.16);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  transition: border-color 150ms ease-out, background 150ms ease-out;
+}
+
+.apothecary-input:focus {
+  outline: none;
+  border-color: rgba(188, 157, 96, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.input-error {
+  border-color: var(--danger);
+}
+
+.error-message {
+  color: var(--danger);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .glass-panel {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .main-nav {
+    font-size: 0.9rem;
+  }
+}
